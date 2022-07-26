@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우리동네 패스트푸드점</title>
+  <!-- 구글 웹 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+  <!-- 폰트 어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="/css/index.css">
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous">
+  </script>
+  <script src="./js/scripts.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="left">
+        <img src="./img/burger.jpg" alt="배경">
+      </div>
+      <div class="right">
+        <div class="title">
+          <div class="circle"></div>
+          <p>Fresh Fast Food</p>
+          <h1>우리동네</h1><br>
+          <span>패스트푸드</span><br>  
+        </div>
+        <div class="search">
+          <input type="text" id="txt-search" placeholder="우리 동네를 검색해보세요!" />
+          <button class="btn_search" onclick="">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="result">
+          <div class="total"></div>
+          <div class="list"></div>
+          <div class="paging"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 템플릿 -->
+  <div id="item-template" class="item"> <!--전체를 감싸는 그룹 객체-->
+    <div class="item-no"></div> <!--일련 번호-->
+    <div class="item-detail"> <!--지점 정보를 감싸주는 그룹 객체-->
+      <div class="item-name"></div> <!--패스트푸드점 이름-->
+      <div class="item-addr"></div> <!--패스트푸드 주소-->
+    </div>
+  </div>
+
+
+  <!-- <header id="header">
+    <div class="container">
+      <div class="side-img">
+        <img src="./img/burger.jpg" alt="배경">
+      </div>
+    </div>
+  </header>
+  <aside id="aside">
+    <div class="container">
+      <div class="title">
+        <div class="circle"></div>
+        <p>Fresh Fast Food</p>
+        <h1>우리동네</h1><br>
+        <span>패스트푸드</span><br>  
+      </div>
+      <div class="search">
+        <input type="text" id="txt-search" placeholder="우리 동네를 검색해보세요!" />
+        <button class="btn_search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </aside> -->
+</body>
+</html>

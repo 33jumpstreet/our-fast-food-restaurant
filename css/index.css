@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+}
+
+#header {
+  position: relative;
+  width: 100%;
+}
+#header .container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+#header .left {
+  width: 35%;
+  height: 100%;
+}
+#header .left img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#header .right {
+  background-color: #f8f2ed;
+  width: 65%;
+  height: 100%;
+  position: absolute;  
+  top: 0;
+  right: 0;
+}
+#header .right .title {
+  position: relative;
+}
+#header .right .title p {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #32499a;
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  font-size: 30px;
+  font-weight: bold;
+}
+#header .right .title .circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #f7d24c;
+  position: absolute;
+  top: 100px;
+  right: 185px;
+}
+#header .right .title h1 {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  position: absolute;
+  top: 230px;
+  right: 200px;
+  font-size: 150px;
+  font-weight: bold;
+}
+#header .right .title span {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  position: absolute;
+  top: 400px;
+  right: 200px;
+  font-size: 150px;
+  font-weight: bold;
+}
+#header .right .search {
+  position: absolute;
+  top: 70%;
+  right: 200px;
+}
+#header .right .search #txt-search {
+  width: 550px;
+  height: 60px;
+  border-radius: 20px;
+  border: 1px solid #565656;
+  box-sizing: border-box;
+  text-indent: 30px;
+  font-size: 30px;
+}
+#header .right .search .btn_search {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+}
+#header .right .search .btn_search .fa {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+#header .result {
+  position: absolute;  
+  top: 30px;
+  left: 400px;
+}
+
+.total {
+  margin: 20px 10px 7px;
+  font-size: 13px;
+  color: #bd5a00;
+}
+
+#item-template {
+  display: none;
+}
+
+.item {
+  padding: 10px 20px;
+  border: 1px solid #d2d2d2;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+.item-no {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 30px;
+  color: #a0a0a0;
+  vertical-align: middle;
+  min-width: 17px;
+}
+
+.item-detail {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.item-name {
+  font-size: 20px;
+}
+
+.item-addr {
+  font-size: 14px;
+  color: #909090;
+  margin-top: 2px;
+}
+
+.paging {
+    text-align: center;
+    margin-top: 23px;
+}
+
+.paging a {
+    text-decoration: none;
+    margin-right: 8px;
+    color: #bd5a00;
+}
+
+.paging a.current {
+    font-weight: bold;
+    color: #ffb500;
+}
+
+.paging a.prev {
+    margin-right: 15px;
+}
+
+.paging a.next {
+    margin-left: 7px;
+}
+
+/* 
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+}
+#header {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+#header .container {
+  width: 30%;
+  height: 100%;
+  background-color: antiquewhite;
+}
+#header .container .side-img {
+  width: 100%;
+  height: 100%;
+}
+#header .container img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#aside {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#aside .container {
+  background-color: #f8f2ed;
+  width: 70%;
+  height: 100%;
+  position: absolute;  
+  top: 0;
+  right: 0;
+}
+#aside .container .title {
+  position: relative;
+}
+#aside .container .title .circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #f7d24c;
+  position: absolute;
+  top: 50px;
+  right: 185px;
+}
+#aside .container .title p {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #32499a;
+  position: absolute;
+  top: 150px;
+  right: 200px;
+  font-size: 30px;
+  font-weight: bold;
+}
+#aside .container .title h1 {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  position: absolute;
+  top: 180px;
+  right: 200px;
+  font-size: 170px;
+  font-weight: bold;
+}
+#aside .container .title span {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  position: absolute;
+  top: 370px;
+  right: 200px;
+  font-size: 170px;
+  font-weight: bold;
+}
+#aside .container .search {
+  position: absolute;
+  top: 650px;
+  right: 200px;
+}
+#aside .container .search #txt-search {
+  width: 550px;
+  height: 60px;
+  border-radius: 20px;
+  border: 1px solid #565656;
+  box-sizing: border-box;
+  text-indent: 30px;
+  font-size: 30px;
+}
+#aside .container .search .btn_search {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+}
+#aside .container .search .btn_search i {
+  cursor: pointer;
+  font-size: 24px;
+} */
